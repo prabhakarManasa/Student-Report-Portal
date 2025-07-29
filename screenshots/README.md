@@ -2,20 +2,17 @@
 
 Here are some screenshots of the **Student Report Portal** in action:
 
-<br>
+---
 
-### 🏠 Home Interface
+### 🏡 Home Interface  
+<img src="https://raw.githubusercontent.com/prabhakarManasa/Student-Report-Portal/main/screenshots/homepage.png" alt="Homepage" width="700"/>
 
-<img src="./screenshots/homepage.png" alt="Homepage" width="700"/>
+---
 
-<br>
+### 📊 Student Table with Filters  
+<img src="https://raw.githubusercontent.com/prabhakarManasa/Student-Report-Portal/main/screenshots/tableview.png" alt="Student Table" width="700"/>
 
-### 📊 Student Table with Filters
+---
 
-<img src="./screenshots/tableview.png" alt="Student Table" width="700"/>
-
-<br>
-
-### 🧾 Exported PDF Sample
-
-<img src="./screenshots/pdfsample.png" alt="Export PDF" width="700"/>
+### 🧾 Exported PDF Sample  
+<img src="https://raw.githubusercontent.com/prabhakarManasa/Student-Report-Portal/main/screenshots/pdfsample.png" alt="Export PDF" width="700"/>
