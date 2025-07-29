@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Student Report Portal</title>
+</head>
+<body>
+
+  <h1>STUDENT REPORT PORTAL</h1>
+
+  
+  <div class="form-box">
+    <input type="text" id="nameInput" placeholder="Enter Student Name" />
+    <input type="number" id="marksInput" placeholder="Enter Student Marks" />
+    <button id="addBtn" class="btn btn-add" onclick="addStudent()">Add Student</button>
+  </div>
+  <br><br>
+
+  
+  <div class="button-group">
+    <!-- Row 1: Filters -->
+    <div class="button-row">
+      <button class="filter-btn" onclick="filterStudents('all')">All</button>
+      <button class="filter-btn" onclick="filterStudents('toppers')">Toppers (75+)</button>
+      <button class="filter-btn" onclick="filterStudents('average')">Average (35-74)</button>
+      <button class="filter-btn" onclick="filterStudents('dullers')">Dullers (Below 35)</button>
+    </div>
+
+    
+    <div class="button-row">
+      <button class="btn btn-sort" onclick="sortByMarks()">Sort by Marks ⬇️</button>
+      <button class="btn btn-export" onclick="exportToPDF()">📄Export PDF</button>
+    </div>
+
+    
+    <div class="button-row">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search by name..."
+        oninput="searchStudent()"
+      />
+    </div>
+  </div>
+
+  <div id="studentList"></div>
+  <div id="summaryBox"></div>
+
+  
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+</body>
+</html>
